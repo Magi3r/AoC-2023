@@ -5,8 +5,10 @@ Solutions written in [Der Deutschen Programmiersprache](https://github.com/DDP-P
 
 ## Usage
 After installing the compiler, you can compile and invoke the program like this:
-`kddp kompiliere script.ddp`
-`./script <input.txt`
+```
+kddp kompiliere script.ddp
+./script <input.txt
+```
 
 Or run it like this:
 `kddp starte script.ddp <input.text`
