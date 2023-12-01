@@ -1,0 +1,82 @@
+Binde "Duden/Eingabe" ein.
+Binde "Duden/Ausgabe" ein.
+Binde "Duden/Listen" ein.
+Binde "Duden/Zeichen" ein.
+Binde "Duden/Texte" ein.
+
+Die Zahl Gesamtsumme ist 0.
+
+Die Funktion entferneVorne mit den Parametern text und anzahl vom Typ Text Referenz und Zahl, gibt nichts zurück, macht:
+    Wenn nicht ((die Länge von text) größer als anzahl ist), dann:
+        Speichere "" in text.
+    Sonst speichere text von anzahl plus 1 bis (die Länge von text) in text.
+Und kann so benutzt werden:
+    "Entferne <anzahl> Buchstaben am Anfang von <text>"
+
+Die Funktion TextZuZiffer mit dem Parameter text vom Typ Text Referenz, gibt eine Zahl zurück, macht:
+    Wenn "one" am Anfang von text steht, dann:
+        Entferne 1 Buchstaben am Anfang von text.
+        Gib 1 zurück.
+    Wenn aber "two" am Anfang von text steht, dann:
+        Entferne 1 Buchstaben am Anfang von text.
+        Gib 2 zurück.
+    Wenn aber "three" am Anfang von text steht, dann:
+        Entferne 1 Buchstaben am Anfang von text.
+        Gib 3 zurück.
+    Wenn aber "four" am Anfang von text steht, dann:
+        Entferne 1 Buchstaben am Anfang von text.
+        Gib 4 zurück.
+    Wenn aber "five" am Anfang von text steht, dann:
+        Entferne 1 Buchstaben am Anfang von text.
+        Gib 5 zurück.
+    Wenn aber "six" am Anfang von text steht, dann:
+        Entferne 1 Buchstaben am Anfang von text.
+        Gib 6 zurück.
+    Wenn aber "seven" am Anfang von text steht, dann:
+        Entferne 1 Buchstaben am Anfang von text.
+        Gib 7 zurück.
+    Wenn aber "eight" am Anfang von text steht, dann:
+        Entferne 1 Buchstaben am Anfang von text.
+        Gib 8 zurück.
+    Wenn aber "nine" am Anfang von text steht, dann:
+        Entferne 1 Buchstaben am Anfang von text.
+        Gib 9 zurück.
+    Gib 0 zurück.    
+Und kann so benutzt werden:
+    "die versteckte Ziffer in <text>"
+
+[ "Main" ]
+Solange nicht die Benutzereingabe zu Ende gewesen ist, mache:
+    Der Text Eingabe ist die nächste Zeile.
+    Schreibe Eingabe auf eine Zeile.
+    Der Text Ziffer1 ist "".
+    Der Text Ziffer2 ist "".
+    [ Lese jedes Zeichen der Eingabe ]
+    Solange Eingabe ungleich "" ist, mache:
+        Schreibe Eingabe auf eine Zeile.
+        [ Entweder lies die Ziffer als Text ]
+        Die Zahl textZiffer ist die versteckte Ziffer in Eingabe.
+        Wenn textZiffer größer als 0 ist, dann:
+            Wenn Ziffer1 gleich "" ist, dann:
+                Speichere textZiffer als Text in Ziffer1.
+                Speichere textZiffer als Text in Ziffer2.
+            Sonst:
+                Speichere textZiffer als Text in Ziffer2.
+        [ Oder die Ziffer als Zahl ]
+        Sonst:
+            Der Buchstabe b ist Eingabe an der Stelle 1.
+            Entferne 1 Buchstaben am Anfang von Eingabe.
+            Wenn b eine Zahl ist, dann:
+                Wenn Ziffer1 gleich "" ist, dann:
+                    Speichere b als Text in Ziffer1.
+                    Speichere b als Text in Ziffer2.
+                Sonst:
+                    Speichere b als Text in Ziffer2.
+    Schreibe (Ziffer1 verkettet mit Ziffer2) auf eine Zeile.
+    [ Eine Zeile wurde nun komplett gelesen ]      
+    Die Zahl Zwischenergebnis ist (Ziffer1 verkettet mit Ziffer2) als Zahl.
+    Speichere Gesamtsumme plus Zwischenergebnis in Gesamtsumme.
+    Speichere "" in Ziffer1.
+    Speichere "" in Ziffer2.
+
+Schreibe Gesamtsumme auf eine Zeile.
