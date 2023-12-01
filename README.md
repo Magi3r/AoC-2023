@@ -1,7 +1,7 @@
 # AoC-2023
-Advent of Code 2023
+[Advent of Code 2023](https://adventofcode.com/2023)
 
-Written in [Der Deutschen Programmiersprache](https://github.com/DDP-Projekt/Kompilierer).
+Solutions written in [Der Deutschen Programmiersprache](https://github.com/DDP-Projekt/Kompilierer).
 
 ## Usage
 After installing the compiler, you can compile and invoke the program like this:
