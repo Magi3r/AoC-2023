@@ -1,0 +1,26 @@
+Binde "Duden/Eingabe" ein.
+Binde "Duden/Ausgabe" ein.
+Binde "Duden/Listen" ein.
+Binde "Duden/Zeichen" ein.
+
+Die Zahl Gesamtsumme ist 0.
+
+Solange nicht die Benutzereingabe zu Ende gewesen ist, mache:
+    Der Text Eingabe ist die nächste Zeile.
+    Der Text Ziffer1 ist "".
+    Der Text Ziffer2 ist "".
+    [ Lese jedes Zeichen der Eingabe ]
+    Für jeden Buchstaben b in Eingabe, mache:
+        Wenn b eine Zahl ist, dann:
+            Wenn Ziffer1 gleich "" ist, dann:
+                Speichere b als Text in Ziffer1.
+                Speichere b als Text in Ziffer2.
+            Sonst:
+                Speichere b als Text in Ziffer2.
+    [ Eine Zeile wurde nun komplett gelesen ]      
+    Die Zahl Zwischenergebnis ist (Ziffer1 verkettet mit Ziffer2) als Zahl.
+    Speichere Gesamtsumme plus Zwischenergebnis in Gesamtsumme.
+    Speichere "" in Ziffer1.
+    Speichere "" in Ziffer2.
+
+Schreibe Gesamtsumme auf eine Zeile.
