@@ -1,0 +1,51 @@
+Binde "Hilfsmittel" ein.
+Binde "Duden/Eingabe" ein.
+Binde "Duden/Ausgabe" ein.
+Binde "Duden/Listen" ein.
+Binde "Duden/Zeichen" ein.
+Binde "Duden/Texte" ein.
+
+Die Zahl Gesamtsumme ist 0.
+
+Die Zahl möglicheRote ist 12.
+Die Zahl möglicheGrüne ist 13.
+Die Zahl möglicheBlaue ist 14.
+
+Die Zahl SpielID ist 1.
+
+[
+    Dieses Programm funktioniert nur, wenn KEINE Leerzeile am Ende der Eingabe steht!
+]
+Solange nicht die Benutzereingabe zu Ende gewesen ist, mache:
+    Der Text Spiel ist die nächste Zeile.
+    [ Entferne SpielID ]
+    Entferne (6 plus die Länge von SpielID als Text) Buchstaben am Anfang von Spiel.
+
+    Der Boolean Unmöglich ist Falsch.
+    
+    [ Iteriere über alle Möglichkeiten ]
+    Solange nicht (Spiel gleich "" ist) und nicht Unmöglich, mache:
+        [ Schleifen Körper ]
+        Die Zahl Anzahl ist die nächste Zahl aus Spiel.
+        Der Buchstabe color ist der nächste Buchstabe aus Spiel.
+        Wenn color gleich 'r' ist, dann:
+            [ Wenn Körper ]
+            Wenn Anzahl größer als möglicheRote ist, dann:
+                Speichere Wahr in Unmöglich.
+            Entferne 3 Buchstaben am Anfang von Spiel.
+        Wenn aber color gleich 'g' ist, dann:
+            Wenn Anzahl größer als möglicheGrüne ist, dann:
+                Speichere Wahr in Unmöglich.
+            Entferne 5 Buchstaben am Anfang von Spiel.
+        Wenn aber color gleich 'b' ist, dann:
+            Wenn Anzahl größer als möglicheBlaue ist, dann:
+                Speichere Wahr in Unmöglich.
+            Entferne 4 Buchstaben am Anfang von Spiel.
+        Sonst:
+            [ Fehler ]
+            Schreibe "Fehler bei der Eingabe." auf eine Zeile.
+    Wenn nicht Unmöglich, dann:
+        [ Wenn Körper ]
+        Speichere SpielID plus Gesamtsumme in Gesamtsumme.
+    Speichere SpielID plus 1 in SpielID.
+Schreibe Gesamtsumme auf eine Zeile.

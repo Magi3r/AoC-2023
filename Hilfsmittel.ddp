@@ -1,0 +1,45 @@
+Binde "Duden/Eingabe" ein.
+Binde "Duden/Texte" ein.
+[
+========TEXT=======
+]
+
+Die öffentliche Funktion entferneVorne mit den Parametern text und anzahl vom Typ Text Referenz und Zahl, gibt nichts zurück, macht:
+    Wenn nicht ((die Länge von text) größer als anzahl ist), dann:
+        Speichere "" in text.
+    Sonst speichere text von anzahl plus 1 bis (die Länge von text) in text.
+Und kann so benutzt werden:
+    "Entferne <anzahl> Buchstaben am Anfang von <text>"
+
+Die öffentliche Funktion entferneHinten mit den Parametern text und anzahl vom Typ Text Referenz und Zahl, gibt nichts zurück, macht:
+    Wenn nicht ((die Länge von text) größer als anzahl ist), dann:
+        Speichere "" in text.
+    Sonst speichere text von 1 bis (die Länge von text minus anzahl) in text.
+Und kann so benutzt werden:
+    "Entferne <anzahl> Buchstaben am Ende von <text>"
+
+Die öffentliche Funktion liesZahlAusText mit dem Parameter text vom Typ Text Referenz, gibt eine Zahl zurück, macht:
+    [ Funktions Körper ]
+    Der Text bufferText ist "".
+    Der Text bufferBuchstabe ist "0".
+    Solange bufferBuchstabe eine Zahl ist, mache:
+        [ Schleifen Körper ]
+        Entferne alle ' ' vor text.
+        Speichere (text an der Stelle 1) als Text in bufferBuchstabe.
+        Wenn bufferBuchstabe eine Zahl ist, dann:
+            Speichere bufferText verkettet mit bufferBuchstabe in bufferText.
+            Entferne 1 Buchstaben am Anfang von text.
+    Gib bufferText als Zahl zurück.
+Und kann so benutzt werden:
+    "die nächste Zahl aus <text>"
+
+Die öffentliche Funktion liesBuchstabeAusText mit dem Parameter text vom Typ Text Referenz, gibt einen Buchstaben zurück, macht:
+    [ Funktions Körper ]
+    Der Buchstabe bufferBuchstabe ist ' '. 
+    Entferne alle ' ' vor text.
+    Wenn die Länge von text größer als 0 ist, dann:
+        Speichere text an der Stelle 1 in bufferBuchstabe.
+        Entferne 1 Buchstaben am Anfang von text.
+    Gib bufferBuchstabe zurück.
+Und kann so benutzt werden:
+    "der nächste Buchstabe aus <text>"

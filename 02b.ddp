@@ -1,0 +1,56 @@
+Binde "Hilfsmittel" ein.
+Binde "Duden/Eingabe" ein.
+Binde "Duden/Ausgabe" ein.
+Binde "Duden/Listen" ein.
+Binde "Duden/Zeichen" ein.
+Binde "Duden/Texte" ein.
+
+Die Zahl Gesamtsumme ist 0.
+
+Die Zahl SpielID ist 1.
+
+[
+    Dieses Programm funktioniert nur, wenn KEINE Leerzeile am Ende der Eingabe steht!
+]
+Solange nicht die Benutzereingabe zu Ende gewesen ist, mache:
+    Die Zahl möglicheRote ist 1.
+    Die Zahl möglicheGrüne ist 1.
+    Die Zahl möglicheBlaue ist 1.
+
+    Der Text Spiel ist die nächste Zeile.
+    [ Entferne SpielID ]
+    Entferne (6 plus die Länge von SpielID als Text) Buchstaben am Anfang von Spiel.
+
+    Der Boolean Fertig ist Falsch.
+    
+    [ Iteriere über alle Möglichkeiten ]
+    Solange nicht (Spiel gleich "" ist) und nicht Fertig, mache:
+        [ Schleifen Körper ]
+        Schreibe Spiel auf eine Zeile.
+
+        Die Zahl Anzahl ist die nächste Zahl aus Spiel.
+        Der Buchstabe color ist der nächste Buchstabe aus Spiel.
+        Wenn color gleich 'r' ist, dann:
+            [ Wenn Körper ]
+            Wenn Anzahl größer als möglicheRote ist, dann:
+                Speichere Anzahl in möglicheRote.
+            Entferne 2 Buchstaben am Anfang von Spiel.
+        Wenn aber color gleich 'g' ist, dann:
+            Wenn Anzahl größer als möglicheGrüne ist, dann:
+                Speichere Anzahl in möglicheGrüne.
+            Entferne 4 Buchstaben am Anfang von Spiel.
+        Wenn aber color gleich 'b' ist, dann:
+            Wenn Anzahl größer als möglicheBlaue ist, dann:
+                Speichere Anzahl in möglicheBlaue.
+            Entferne 3 Buchstaben am Anfang von Spiel.
+        Sonst:
+            [ Fehler ]
+            Schreibe "Fehler bei der Eingabe." auf eine Zeile.
+        Der Buchstabe Ende ist der nächste Buchstabe aus Spiel.
+        Wenn Ende gleich ' ' ist, dann:
+            Speichere wahr in Fertig.
+    Die Zahl Ergbnis ist (möglicheBlaue mal möglicheGrüne mal möglicheRote).
+    Schreibe Ergbnis auf eine Zeile.
+    Speichere Ergbnis plus Gesamtsumme in Gesamtsumme.
+    Speichere SpielID plus 1 in SpielID.
+Schreibe Gesamtsumme auf eine Zeile.
