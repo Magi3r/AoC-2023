@@ -4,6 +4,7 @@ Binde "Duden/Ausgabe" ein.
 Binde "Duden/Listen" ein.
 Binde "Duden/Zeichen" ein.
 Binde "Duden/Texte" ein.
+Binde "Duden/Laufzeit" ein.
 
 Die Zahl Gesamtsumme ist 0.
 
@@ -17,7 +18,12 @@ Die Zahl SpielID ist 1.
     Dieses Programm funktioniert nur, wenn KEINE Leerzeile am Ende der Eingabe steht!
 ]
 Solange nicht die Benutzereingabe zu Ende gewesen ist, mache:
+    [Beende bei leerer Zeile]
     Der Text Spiel ist die nächste Zeile.
+    Wenn Spiel gleich "" ist, dann:
+        Schreibe Gesamtsumme auf eine Zeile.
+        Beende das Programm.
+
     [ Entferne SpielID ]
     Entferne (6 plus die Länge von SpielID als Text) Buchstaben am Anfang von Spiel.
 

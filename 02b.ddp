@@ -4,6 +4,7 @@ Binde "Duden/Ausgabe" ein.
 Binde "Duden/Listen" ein.
 Binde "Duden/Zeichen" ein.
 Binde "Duden/Texte" ein.
+Binde "Duden/Laufzeit" ein.
 
 Die Zahl Gesamtsumme ist 0.
 
@@ -17,7 +18,12 @@ Solange nicht die Benutzereingabe zu Ende gewesen ist, mache:
     Die Zahl möglicheGrüne ist 1.
     Die Zahl möglicheBlaue ist 1.
 
+    [Beende bei leerer Zeile]
     Der Text Spiel ist die nächste Zeile.
+    Wenn Spiel gleich "" ist, dann:
+        Schreibe Gesamtsumme auf eine Zeile.
+        Beende das Programm.
+
     [ Entferne SpielID ]
     Entferne (6 plus die Länge von SpielID als Text) Buchstaben am Anfang von Spiel.
 
