@@ -1,0 +1,58 @@
+Binde "Duden/Listen" ein.
+Binde "Duden/Eingabe" ein.
+Binde "Duden/Texte" ein.
+Binde "Duden/Mathe" ein.
+Binde "Duden/Ausgabe" ein.
+
+Die Funktion überprüfeBedingung mit den Parametern x, y und text vom Typ Zahl, Zahl und Text Liste, gibt einen Boolean zurück, macht:
+    Die Zahl tempXmin ist die größere Zahl von 1 und (x minus 1).
+    Die Zahl tempXmax ist die kleinere Zahl von (x plus 1) und (die Länge von text an der Stelle 1).
+    Die Zahl tempYmin ist die größere Zahl von 1 und (y minus 1).
+    Die Zahl tempYmax ist die kleinere Zahl von (y plus 1) und (die Länge von text).
+    Für jede Zahl tempX von tempXmin bis tempXmax, mache:
+        Für jede Zahl tempY von tempYmin bis tempYmax, mache:
+            Der Buchstabe b ist (text an der Stelle tempY) an der Stelle tempX.
+            Wenn nicht (b als Text) eine Zahl ist und nicht (b gleich '.' ist), dann:
+                Gib wahr zurück.
+    Gib falsch zurück.
+Und kann so benutzt werden:
+    "überprüfe Bedinung für <x> <y> in <text>"
+
+Die Funktion fertigeBerechnung mit den Parametern ges, buf und gültig vom Typ Zahlen Referenz, Text Referenz und Boolean Referenz, gibt nichts zurück, macht:
+    [ Funktions Körper ]
+    Wenn buf ungleich "" ist, dann:
+        Wenn gültig, dann:
+            Speichere ges plus buf als Zahl in ges.
+            Speichere falsch in gültig.
+        Speichere "" in buf.
+Und kann so benutzt werden:
+    "Verarbeite die fertige Berechnung für <ges>, <buf> und <gültig>"
+
+Die Zahl Gesamtsumme ist 0.
+
+Die Text Liste textListe ist eine leere Text Liste.  
+
+[ Lies die Eingabe und mache sie zu einer Liste ]
+Solange nicht die Benutzereingabe zu Ende gewesen ist, mache:
+    Der Text eingabe ist die nächste Zeile.
+    Wenn eingabe ungleich "" ist, dann:
+        Füge eingabe an textListe an.
+
+Die Zahl breite ist die Länge von textListe an der Stelle 1.
+Die Zahl höhe ist die Länge von textListe.
+
+Der Text Zahlenpuffer ist "".
+Der Boolean gültig ist falsch.
+
+[ Gehe alle Zeichen durch, bis eine Zahl gelesen wird ]
+Für jede Zahl y von 1 bis höhe, mache:
+    Für jede Zahl x von 1 bis breite, mache:
+        Der Text b ist ((textListe an der Stelle y) an der Stelle x) als Text.
+        Wenn b eine Zahl ist, dann:
+            Speichere Zahlenpuffer verkettet mit b in Zahlenpuffer.
+            Speichere gültig oder überprüfe Bedinung für x y in textListe in gültig.
+        Sonst:
+            Verarbeite die fertige Berechnung für Gesamtsumme, Zahlenpuffer und gültig.
+    Verarbeite die fertige Berechnung für Gesamtsumme, Zahlenpuffer und gültig.
+
+Schreibe Gesamtsumme auf eine Zeile.
