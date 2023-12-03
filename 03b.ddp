@@ -5,7 +5,7 @@ Binde "Duden/Mathe" ein.
 Binde "Duden/Ausgabe" ein.
 
 Die Funktion berechne mit den Parametern x, y und text vom Typ Zahl, Zahl und Text Liste, gibt eine Zahl zurück, macht:
-    Schreibe ("Gefunden: " verkettet mit x als Text verkettet mit "," verkettet mit y als Text) auf eine Zeile.
+    Schreibe ("* Gefunden: " verkettet mit x als Text verkettet mit "," verkettet mit y als Text) auf eine Zeile.
 
     Die Zahlen Liste zahlenListe ist eine leere Zahlen Liste.
     [ suche nach Zahlen angrenzed an *]
@@ -13,9 +13,10 @@ Die Funktion berechne mit den Parametern x, y und text vom Typ Zahl, Zahl und Te
     Die Zahl tempXmax ist die kleinere Zahl von (x plus 1) und (die Länge von text an der Stelle 1).
     Die Zahl tempYmin ist die größere Zahl von 1 und (y minus 1).
     Die Zahl tempYmax ist die kleinere Zahl von (y plus 1) und (die Länge von text).
-    Für jede Zahl tempX von tempXmin bis tempXmax, mache:
-        Für jede Zahl tempY von tempYmin bis tempYmax, mache:
+    Für jede Zahl tempY von tempYmin bis tempYmax, mache:
+        Für jede Zahl tempX von tempXmin bis tempXmax, mache:
             Der Text Zahlenpuffer ist ((text an der Stelle tempY) an der Stelle tempX) als Text.
+            Schreibe ("Betrachte: " verkettet mit tempX als Text verkettet mit "," verkettet mit tempY als Text verkettet mit ": " verkettet mit Zahlenpuffer) auf eine Zeile.
             Wenn Zahlenpuffer eine Zahl ist, dann:
                 [erweitere Zahl um ziffern links und rechts]
                 Der Boolean gültig ist wahr.
