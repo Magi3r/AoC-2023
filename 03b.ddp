@@ -1,0 +1,69 @@
+Binde "Duden/Listen" ein.
+Binde "Duden/Eingabe" ein.
+Binde "Duden/Texte" ein.
+Binde "Duden/Mathe" ein.
+Binde "Duden/Ausgabe" ein.
+
+Die Funktion berechne mit den Parametern x, y und text vom Typ Zahl, Zahl und Text Liste, gibt eine Zahl zurück, macht:
+    Schreibe ("Gefunden: " verkettet mit x als Text verkettet mit "," verkettet mit y als Text) auf eine Zeile.
+
+    Die Zahlen Liste zahlenListe ist eine leere Zahlen Liste.
+    [ suche nach Zahlen angrenzed an *]
+    Die Zahl tempXmin ist die größere Zahl von 1 und (x minus 1).
+    Die Zahl tempXmax ist die kleinere Zahl von (x plus 1) und (die Länge von text an der Stelle 1).
+    Die Zahl tempYmin ist die größere Zahl von 1 und (y minus 1).
+    Die Zahl tempYmax ist die kleinere Zahl von (y plus 1) und (die Länge von text).
+    Für jede Zahl tempX von tempXmin bis tempXmax, mache:
+        Für jede Zahl tempY von tempYmin bis tempYmax, mache:
+            Der Text Zahlenpuffer ist ((text an der Stelle tempY) an der Stelle tempX) als Text.
+            Wenn Zahlenpuffer eine Zahl ist, dann:
+                [erweitere Zahl um ziffern links und rechts]
+                Der Boolean gültig ist wahr.
+                [ Suche links ]
+                Die Zahl suchendesX ist tempX minus 1.
+                Solange nicht (suchendesX kleiner als 1 ist) und gültig, mache:
+                    Der Text b ist ((text an der Stelle tempY) an der Stelle suchendesX) als Text.
+                    Wenn b eine Zahl ist, dann:
+                        Speichere b verkettet mit Zahlenpuffer in Zahlenpuffer.
+                    Sonst speichere falsch in gültig.
+                    Speichere suchendesX minus 1 in suchendesX.
+                [Suche rechts]
+                Speichere wahr in gültig.
+                Speichere tempX plus 1 in suchendesX.
+                Solange nicht (suchendesX größer als (die Länge von text an der Stelle 1) ist) und gültig, mache:
+                    Der Text b ist ((text an der Stelle tempY) an der Stelle suchendesX) als Text.
+                    Wenn b eine Zahl ist, dann:
+                        Speichere Zahlenpuffer verkettet mit b in Zahlenpuffer.
+                    Sonst speichere falsch in gültig.
+                    Speichere suchendesX plus 1 in suchendesX.
+                    Speichere tempX plus 1 in tempX.
+                Füge (Zahlenpuffer als Zahl) an zahlenListe an.
+    Schreibe zahlenListe auf eine Zeile.
+    Wenn die Länge von zahlenListe gleich 2 ist, dann:
+        Gib (zahlenListe an der Stelle 1) mal (zahlenListe an der Stelle 2) zurück.
+    Gib 0 zurück.
+Und kann so benutzt werden:
+    "der Wert für <x>, <y> in <text>" oder
+    "den Wert für <x>, <y> in <text>"
+
+Die Zahl Gesamtsumme ist 0.
+
+Die Text Liste textListe ist eine leere Text Liste.  
+
+[ Lies die Eingabe und mache sie zu einer Liste ]
+Solange nicht die Benutzereingabe zu Ende gewesen ist, mache:
+    Der Text eingabe ist die nächste Zeile.
+    Wenn eingabe ungleich "" ist, dann:
+        Füge eingabe an textListe an.
+
+Die Zahl breite ist die Länge von textListe an der Stelle 1.
+Die Zahl höhe ist die Länge von textListe.
+
+[ Gehe alle Zeichen durch, bis eine Zahl gelesen wird ]
+Für jede Zahl y von 1 bis höhe, mache:
+    Für jede Zahl x von 1 bis breite, mache:
+        Der Text b ist ((textListe an der Stelle y) an der Stelle x) als Text.
+        Wenn b gleich "*" ist, dann:
+            Speichere (den Wert für x, y in textListe) plus Gesamtsumme in Gesamtsumme.
+
+Schreibe Gesamtsumme auf eine Zeile.
