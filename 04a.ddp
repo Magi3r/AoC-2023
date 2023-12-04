@@ -1,0 +1,34 @@
+Binde "Duden/Listen" ein.
+Binde "Duden/Eingabe" ein.
+Binde "Duden/Texte" ein.
+Binde "Duden/Mathe" ein.
+Binde "Duden/Ausgabe" ein.
+Binde "Hilfsmittel" ein.
+
+Die Zahl Gesamtsumme ist 0.
+
+Solange nicht die Benutzereingabe zu Ende gewesen ist, mache:
+    Der Text Zeile ist die nächste Zeile.
+    [ Entferne Zeilennummer ]
+    Speichere Zeile von 11 bis (die Länge von Zeile) in Zeile.
+    [ Speichere Gewinnzahlen ]
+    Die Zahlen Liste Gewinnzahlen ist  eine leere Zahlen Liste.
+    Wiederhole:
+        Füge ((Zeile von 1 bis 3) als Zahl) an Gewinnzahlen an.
+        Entferne 3 Buchstaben am Anfang von Zeile.
+    10 Mal.
+    [ Entferne Trennzeichen ]
+    Entferne 2 Buchstaben am Anfang von Zeile.
+    [ Überprüfe ob Zahl in Gewinnzahl ]
+    Die Zahl Wert ist 0.
+    Wiederhole:
+        Die Zahl freigerubbelteZahl ist (Zeile von 1 bis 3) als Zahl.
+        Wenn Gewinnzahlen freigerubbelteZahl enthält, dann:
+            Wenn Wert gleich 0 ist, dann:
+                Speichere 1 in Wert.
+            Sonst speichere Wert mal 2 in Wert.
+        Entferne 3 Buchstaben am Anfang von Zeile.
+    25 Mal.
+    Speichere Gesamtsumme plus Wert in Gesamtsumme.
+
+Schreibe Gesamtsumme auf eine Zeile.
