@@ -1,0 +1,53 @@
+Binde "Duden/Listen" ein.
+Binde "Duden/Eingabe" ein.
+Binde "Duden/Texte" ein.
+Binde "Duden/Mathe" ein.
+Binde "Duden/Ausgabe" ein.
+Binde "Hilfsmittel" ein.
+
+Die Zahl Gesamtsumme ist 0.
+Die Text Liste Input ist eine leere Text Liste.
+Die Zahlen Liste NachschauTabelle ist eine leere Zahlen Liste.
+Die Zahlen Liste OperierendeListe ist eine leere Zahlen Liste.
+
+Solange nicht die Benutzereingabe zu Ende gewesen ist, mache:
+    Füge (die nächste Zeile) an Input an.
+
+Solange nicht Input leer ist, mache:
+    [ Entferne Zeilennummer ]
+    Der Text Zeile ist Input an der Stelle 1.
+    Lösche das Element an der Stelle 1 aus Input.
+    Entferne 4 Buchstaben am Anfang von Zeile.
+    Die Zahl Zeilennummer ist (Zeile von 1 bis 4) als Zahl.
+    Entferne 6 Buchstaben am Anfang von Zeile.
+    Die Zahl Wert ist 0.
+    Schreibe ("Betrachte Zeile " verkettet mit Zeilennummer als Text) auf eine Zeile.
+    
+    Wenn Zeilennummer größer als die Länge von NachschauTabelle ist, dann:
+
+        [ Speichere Gewinnzahlen ]
+        Die Zahlen Liste Gewinnzahlen ist eine leere Zahlen Liste.
+        Wiederhole:
+            Füge ((Zeile von 1 bis 3) als Zahl) an Gewinnzahlen an.
+            Entferne 3 Buchstaben am Anfang von Zeile.
+        10 Mal.
+        [ Entferne Trennzeichen ]
+        Entferne 2 Buchstaben am Anfang von Zeile.
+        [ Überprüfe ob Zahl in Gewinnzahl ]
+        Wiederhole:
+            Die Zahl freigerubbelteZahl ist (Zeile von 1 bis 3) als Zahl.
+            Wenn Gewinnzahlen freigerubbelteZahl enthält, dann:
+                Speichere Wert plus 1 in Wert.
+            Entferne 3 Buchstaben am Anfang von Zeile.
+        25 Mal.
+        Füge Wert an NachschauTabelle an.
+        Schreibe ("Füge die nächsten " verkettet mit Wert als Text verkettet mit " Elemente an Input an.") auf eine Zeile.
+    Sonst:
+        Speichere NachschauTabelle an der Stelle Zeilennummer in Wert.
+    Wenn Wert größer als 0 ist und die Länge von Input größer als 0 ist, dann:
+        Für jede Zahl index von 1 bis die kleinere Zahl von (die Länge von Input) und Wert, mache:
+            Füge (Input an der Stelle index) an Input an.
+    Speichere Gesamtsumme plus 1 in Gesamtsumme.
+    Schreibe ("Länge: " verkettet mit (die Länge von Input)als Text) auf eine Zeile.
+
+Schreibe Gesamtsumme auf eine Zeile.
