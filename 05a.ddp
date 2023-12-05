@@ -1,0 +1,194 @@
+Binde "Duden/Texte" ein.
+Binde "Duden/Listen" ein.
+Binde "Duden/Eingabe" ein.
+Binde "Duden/Mathe" ein.
+Binde "Duden/Ausgabe" ein.
+Binde "Hilfsmittel" ein.
+
+
+Die Zahlen Liste seeds ist eine leere Zahlen Liste.
+
+Wir nennen die Kombination aus
+    der Zahl Start mit Standardwert 0,
+    der Zahl Position mit Standardwert 0,
+    der Zahl Weite mit Standardwert 0,
+ein Mapping,
+und erstellen sie so:
+    "ein Mapping von <Start> nach <Position> der Länge <Weite>"
+
+[Lies seeds ein]
+Der Text SeedInput ist die nächste Zeile.
+Speichere SeedInput im Bereich von 7 bis (die Länge von SeedInput) in SeedInput.
+Der Text Zahlenpuffer ist "".
+Solange SeedInput ungleich "" ist, mache:
+    Der Text Ziffernpuffer ist (SeedInput an der Stelle 1) als Text.
+    Entferne 1 Buchstaben am Anfang von SeedInput.
+    Wenn Ziffernpuffer eine Zahl ist, dann:
+        Speichere Zahlenpuffer verkettet mit Ziffernpuffer in Zahlenpuffer.
+    Sonst:
+        Füge (Zahlenpuffer als Zahl) an seeds an.
+        Speichere "" in Zahlenpuffer.
+
+[Lies seed-soil mapping]
+Ignoriere (die nächste Zeile).
+Ignoriere (die nächste Zeile).
+
+Die Mapping Liste SeedToSoil ist eine leere Mapping Liste.
+
+Der Text SeedToSoilInput ist die nächste Zeile.
+Solange SeedToSoilInput ungleich "" ist, mache:
+    Der Text Zahlenpuffer ist "".
+    Die Zahlen Liste temp ist eine leere Zahlen Liste.
+    Solange SeedToSoilInput ungleich "" ist, mache:
+        Der Text Ziffernpuffer ist (SeedToSoilInput an der Stelle 1) als Text.
+        Entferne 1 Buchstaben am Anfang von SeedToSoilInput.
+        Wenn Ziffernpuffer eine Zahl ist, dann:
+            Speichere Zahlenpuffer verkettet mit Ziffernpuffer in Zahlenpuffer.
+        Sonst:
+            Füge (Zahlenpuffer als Zahl) an temp an.
+            Speichere "" in Zahlenpuffer.
+    Das Mapping map ist ein Mapping von (temp an der Stelle 1) nach (temp an der Stelle 2) der Länge (temp an der Stelle 3).
+    Speichere SeedToSoil verkettet mit map in SeedToSoil.
+    Speichere die nächste Zeile in SeedToSoilInput.
+
+
+[Lies soil-fert mapping]
+Ignoriere (die nächste Zeile).
+
+Die Mapping Liste SoilToFert ist eine leere Mapping Liste.
+
+Der Text SoilToFertInput ist die nächste Zeile.
+Solange SoilToFertInput ungleich "" ist, mache:
+    Der Text Zahlenpuffer ist "".
+    Die Zahlen Liste temp ist eine leere Zahlen Liste.
+    Solange SoilToFertInput ungleich "" ist, mache:
+        Der Text Ziffernpuffer ist (SoilToFertInput an der Stelle 1) als Text.
+        Entferne 1 Buchstaben am Anfang von SoilToFertInput.
+        Wenn Ziffernpuffer eine Zahl ist, dann:
+            Speichere Zahlenpuffer verkettet mit Ziffernpuffer in Zahlenpuffer.
+        Sonst:
+            Füge (Zahlenpuffer als Zahl) an temp an.
+            Speichere "" in Zahlenpuffer.
+    Das Mapping map ist ein Mapping von (temp an der Stelle 1) nach (temp an der Stelle 2) der Länge (temp an der Stelle 3).
+    Speichere SoilToFert verkettet mit map in SoilToFert.
+    Speichere die nächste Zeile in SoilToFertInput.
+
+[ Lies fert-water mapping]
+Die Mapping Liste FertToWater ist eine leere Mapping Liste.
+
+Der Text FertToWaterInput ist die nächste Zeile.
+Solange FertToWaterInput ungleich "" ist, mache:
+    Der Text Zahlenpuffer ist "".
+    Die Zahlen Liste temp ist eine leere Zahlen Liste.
+    Solange FertToWaterInput ungleich "" ist, mache:
+        Der Text Ziffernpuffer ist (FertToWaterInput an der Stelle 1) als Text.
+        Entferne 1 Buchstaben am Anfang von FertToWaterInput.
+        Wenn Ziffernpuffer eine Zahl ist, dann:
+            Speichere Zahlenpuffer verkettet mit Ziffernpuffer in Zahlenpuffer.
+        Sonst:
+            Füge (Zahlenpuffer als Zahl) an temp an.
+            Speichere "" in Zahlenpuffer.
+    Das Mapping map ist ein Mapping von (temp an der Stelle 1) nach (temp an der Stelle 2) der Länge (temp an der Stelle 3).
+    Speichere FertToWater verkettet mit map in FertToWater.
+    Speichere die nächste Zeile in FertToWaterInput.
+
+[Lies water-light mapping]
+Die Mapping Liste WaterToLight ist eine leere Mapping Liste.
+
+Der Text WaterToLightInput ist die nächste Zeile.
+Solange WaterToLightInput ungleich "" ist, mache:
+    Der Text Zahlenpuffer ist "".
+    Die Zahlen Liste temp ist eine leere Zahlen Liste.
+    Solange WaterToLightInput ungleich "" ist, mache:
+        Der Text Ziffernpuffer ist (WaterToLightInput an der Stelle 1) als Text.
+        Entferne 1 Buchstaben am Anfang von WaterToLightInput.
+        Wenn Ziffernpuffer eine Zahl ist, dann:
+            Speichere Zahlenpuffer verkettet mit Ziffernpuffer in Zahlenpuffer.
+        Sonst:
+            Füge (Zahlenpuffer als Zahl) an temp an.
+            Speichere "" in Zahlenpuffer.
+    Das Mapping map ist ein Mapping von (temp an der Stelle 1) nach (temp an der Stelle 2) der Länge (temp an der Stelle 3).
+    Speichere WaterToLight verkettet mit map in WaterToLight.
+    Speichere die nächste Zeile in WaterToLightInput.
+
+[Lies light-temp mapping]
+Die Mapping Liste LightToTemp ist eine leere Mapping Liste.
+
+Der Text LightToTempInput ist die nächste Zeile.
+Solange LightToTempInput ungleich "" ist, mache:
+    Der Text Zahlenpuffer ist "".
+    Die Zahlen Liste temp ist eine leere Zahlen Liste.
+    Solange LightToTempInput ungleich "" ist, mache:
+        Der Text Ziffernpuffer ist (LightToTempInput an der Stelle 1) als Text.
+        Entferne 1 Buchstaben am Anfang von LightToTempInput.
+        Wenn Ziffernpuffer eine Zahl ist, dann:
+            Speichere Zahlenpuffer verkettet mit Ziffernpuffer in Zahlenpuffer.
+        Sonst:
+            Füge (Zahlenpuffer als Zahl) an temp an.
+            Speichere "" in Zahlenpuffer.
+    Das Mapping map ist ein Mapping von (temp an der Stelle 1) nach (temp an der Stelle 2) der Länge (temp an der Stelle 3).
+    Speichere LightToTemp verkettet mit map in LightToTemp.
+    Speichere die nächste Zeile in LightToTempInput.
+
+[Lies temp-humidity-mapping]
+Die Mapping Liste TempToHum ist eine leere Mapping Liste.
+
+Der Text TempToHumInput ist die nächste Zeile.
+Solange TempToHumInput ungleich "" ist, mache:
+    Der Text Zahlenpuffer ist "".
+    Die Zahlen Liste temp ist eine leere Zahlen Liste.
+    Solange TempToHumInput ungleich "" ist, mache:
+        Der Text Ziffernpuffer ist (TempToHumInput an der Stelle 1) als Text.
+        Entferne 1 Buchstaben am Anfang von TempToHumInput.
+        Wenn Ziffernpuffer eine Zahl ist, dann:
+            Speichere Zahlenpuffer verkettet mit Ziffernpuffer in Zahlenpuffer.
+        Sonst:
+            Füge (Zahlenpuffer als Zahl) an temp an.
+            Speichere "" in Zahlenpuffer.
+    Das Mapping map ist ein Mapping von (temp an der Stelle 1) nach (temp an der Stelle 2) der Länge (temp an der Stelle 3).
+    Speichere TempToHum verkettet mit map in TempToHum.
+    Speichere die nächste Zeile in TempToHumInput.
+
+[Hum-loc]
+Die Mapping Liste HumToLoc ist eine leere Mapping Liste.
+
+Der Text HumToLocInput ist die nächste Zeile.
+Solange HumToLocInput ungleich "" ist, mache:
+    Der Text Zahlenpuffer ist "".
+    Die Zahlen Liste temp ist eine leere Zahlen Liste.
+    Solange HumToLocInput ungleich "" ist, mache:
+        Der Text Ziffernpuffer ist (HumToLocInput an der Stelle 1) als Text.
+        Entferne 1 Buchstaben am Anfang von HumToLocInput.
+        Wenn Ziffernpuffer eine Zahl ist, dann:
+            Speichere Zahlenpuffer verkettet mit Ziffernpuffer in Zahlenpuffer.
+        Sonst:
+            Füge (Zahlenpuffer als Zahl) an temp an.
+            Speichere "" in Zahlenpuffer.
+    Das Mapping map ist ein Mapping von (temp an der Stelle 1) nach (temp an der Stelle 2) der Länge (temp an der Stelle 3).
+    Speichere HumToLoc verkettet mit map in HumToLoc.
+    Speichere die nächste Zeile in HumToLocInput.
+    
+Die Funktion solveMapping mit den Parametern input und map vom Typ Zahl und Mapping Liste, gibt eine Zahl zurück, macht:
+    Die Zahl Result ist input.
+    Für jede Zahl index von 1 bis die Länge von map, mache:
+        Das Mapping tempMap ist map an der Stelle index.
+        Wenn nicht ((Start von tempMap) größer als input ist) und nicht (input größer als ((Start von tempMap)plus ( Weite von tempMap))ist), dann:
+            Speichere (Position von tempMap) plus  (Start von tempMap minus input) in Result.
+    Gib Result zurück.
+Und kann so benutzt werden:
+    "das Mapping zu <input> in <map>"
+
+[Main]
+Die Zahlen Liste locations ist eine leere Zahlen Liste.
+Für jede Zahl index von 1 bis die Länge von seeds, mache:
+    Die Zahl seed ist seeds an der Stelle index.
+    Die Zahl soil ist das Mapping zu seed in SeedToSoil.
+    Die Zahl fert ist das Mapping zu soil in SoilToFert.
+    Die Zahl water ist das Mapping zu fert in FertToWater.
+    Die Zahl light ist das Mapping zu water in WaterToLight.
+    Die Zahl temp ist das Mapping zu light in LightToTemp.
+    Die Zahl hum ist das Mapping zu temp in TempToHum.
+    Die Zahl loc ist das Mapping zu hum in HumToLoc.
+    Füge loc an locations an.
+
+Schreibe (der kleinste Wert von locations) auf eine Zeile.
