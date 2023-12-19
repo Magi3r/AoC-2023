@@ -1,0 +1,50 @@
+Binde "Duden/Texte" ein.
+Binde "Duden/Listen" ein.
+Binde "Duden/Eingabe" ein.
+Binde "Duden/Mathe" ein.
+Binde "Duden/Ausgabe" ein.
+Binde "Hilfsmittel" ein.
+
+Die öffentliche Funktion liesZahlAggregiertAusText mit dem Parameter text vom Typ Text Referenz, gibt eine Zahl zurück, macht:
+    [ Funktions Körper ]
+    Der Text bufferText ist "".
+    Der Text bufferBuchstabe ist "0".
+    Solange (bufferBuchstabe eine Zahl ist) und (text ungleich "" ist), mache:
+
+        [ Schleifen Körper ]
+        Entferne alle ' ' vor text.
+        Speichere (text an der Stelle 1) als Text in bufferBuchstabe.
+        Wenn bufferBuchstabe eine Zahl ist, dann:
+            Speichere bufferText verkettet mit bufferBuchstabe in bufferText.
+            Entferne 1 Buchstaben am Anfang von text.
+    Gib bufferText als Zahl zurück.
+Und kann so benutzt werden:
+    "die nächste Zahl aus <text> und ignoriere Leerzeichen"
+
+
+Die Zahlen Liste input_time ist eine leere Zahlen Liste.
+Die Zahlen Liste input_length ist eine leere Zahlen Liste.
+
+Der Text input ist die nächste Zeile.
+Entferne 5 Buchstaben am Anfang von input.
+Solange input ungleich "" ist, mache:
+    Schreibe input auf eine Zeile.
+    Füge (die nächste Zahl aus input und ignoriere Leerzeichen) an input_time an.
+
+Speichere die nächste Zeile in input.
+Entferne 9 Buchstaben am Anfang von input.
+Solange input ungleich "" ist, mache:
+    Schreibe input auf eine Zeile.
+    Füge (die nächste Zahl aus input und ignoriere Leerzeichen) an input_length an.
+
+Die Zahl total ist 1.
+Für jede Zahl index von 1 bis (die Länge von input_time), mache:
+    Die Zahl möglichkeiten ist 0.
+    Die Zahl momentaneZeit ist input_time an der Stelle index.
+    Für jede Zahl drücken von 1 bis (momentaneZeit minus 1), mache:
+        Die Zahl strecke ist input_length an der Stelle index.
+        Wenn drücken mal (momentaneZeit minus drücken) größer als strecke ist, dann:
+            Speichere möglichkeiten plus 1 in möglichkeiten.
+    Speichere total mal möglichkeiten in total.
+
+Schreibe total auf eine Zeile.

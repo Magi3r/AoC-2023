@@ -1,0 +1,34 @@
+Binde "Duden/Texte" ein.
+Binde "Duden/Listen" ein.
+Binde "Duden/Eingabe" ein.
+Binde "Duden/Mathe" ein.
+Binde "Duden/Ausgabe" ein.
+Binde "Hilfsmittel" ein.
+
+
+Die Zahlen Liste input_time ist eine leere Zahlen Liste.
+Die Zahlen Liste input_length ist eine leere Zahlen Liste.
+
+Der Text input ist die nächste Zeile.
+Entferne 5 Buchstaben am Anfang von input.
+Solange input ungleich "" ist, mache:
+    Schreibe input auf eine Zeile.
+    Füge (die nächste Zahl aus input) an input_time an.
+
+Speichere die nächste Zeile in input.
+Entferne 9 Buchstaben am Anfang von input.
+Solange input ungleich "" ist, mache:
+    Schreibe input auf eine Zeile.
+    Füge (die nächste Zahl aus input) an input_length an.
+
+Die Zahl total ist 1.
+Für jede Zahl index von 1 bis (die Länge von input_time), mache:
+    Die Zahl möglichkeiten ist 0.
+    Die Zahl momentaneZeit ist input_time an der Stelle index.
+    Für jede Zahl drücken von 1 bis (momentaneZeit minus 1), mache:
+        Die Zahl strecke ist input_length an der Stelle index.
+        Wenn drücken mal (momentaneZeit minus drücken) größer als strecke ist, dann:
+            Speichere möglichkeiten plus 1 in möglichkeiten.
+    Speichere total mal möglichkeiten in total.
+
+Schreibe total auf eine Zeile.
