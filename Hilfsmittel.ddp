@@ -18,7 +18,7 @@ Die öffentliche Funktion entferneHinten mit den Parametern text und anzahl vom 
 Und kann so benutzt werden:
     "Entferne <anzahl> Buchstaben am Ende von <text>"
 
-Die öffentliche Funktion liesZahlAusText mit dem Parameter text vom Typ Text Referenz, gibt eine Zahl zurück, macht:
+Die öffentliche Funktion l mit dem Parameter text vom Typ Text Referenz, gibt eine Zahl zurück, macht:
     [ Funktions Körper ]
     Der Text bufferText ist "".
     Der Text bufferBuchstabe ist "0".
