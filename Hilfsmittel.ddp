@@ -7,24 +7,25 @@ Binde "Duden/Texte" ein.
 Die öffentliche Funktion entferneVorne mit den Parametern text und anzahl vom Typ Text Referenz und Zahl, gibt nichts zurück, macht:
     Wenn nicht ((die Länge von text) größer als anzahl ist), dann:
         Speichere "" in text.
-    Sonst speichere text von anzahl plus 1 bis (die Länge von text) in text.
+    Sonst speichere text im Bereich von anzahl plus 1 bis (die Länge von text) in text.
 Und kann so benutzt werden:
     "Entferne <anzahl> Buchstaben am Anfang von <text>"
 
 Die öffentliche Funktion entferneHinten mit den Parametern text und anzahl vom Typ Text Referenz und Zahl, gibt nichts zurück, macht:
     Wenn nicht ((die Länge von text) größer als anzahl ist), dann:
         Speichere "" in text.
-    Sonst speichere text von 1 bis (die Länge von text minus anzahl) in text.
+    Sonst speichere text im Bereich von 1 bis (die Länge von text minus anzahl) in text.
 Und kann so benutzt werden:
     "Entferne <anzahl> Buchstaben am Ende von <text>"
 
-Die öffentliche Funktion liesZahlAusText mit dem Parameter text vom Typ Text Referenz, gibt eine Zahl zurück, macht:
+Die öffentliche Funktion l mit dem Parameter text vom Typ Text Referenz, gibt eine Zahl zurück, macht:
     [ Funktions Körper ]
     Der Text bufferText ist "".
     Der Text bufferBuchstabe ist "0".
-    Solange bufferBuchstabe eine Zahl ist, mache:
+    Entferne alle ' ' vor text.
+    Solange (bufferBuchstabe eine Zahl ist) und (text ungleich "" ist), mache:
+
         [ Schleifen Körper ]
-        Entferne alle ' ' vor text.
         Speichere (text an der Stelle 1) als Text in bufferBuchstabe.
         Wenn bufferBuchstabe eine Zahl ist, dann:
             Speichere bufferText verkettet mit bufferBuchstabe in bufferText.
@@ -43,3 +44,8 @@ Die öffentliche Funktion liesBuchstabeAusText mit dem Parameter text vom Typ Te
     Gib bufferBuchstabe zurück.
 Und kann so benutzt werden:
     "der nächste Buchstabe aus <text>"
+
+Die öffentliche Funktion Ignoriere_T mit dem Parameter x vom Typ Text, gibt nichts zurück, macht:
+    [ Nichts ]
+Und kann so benutzt werden:
+    "Ignoriere <x>"

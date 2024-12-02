@@ -9,8 +9,10 @@ After installing the compiler, you can compile and invoke the program like this:
 kddp kompiliere script.ddp
 ./script <input.txt
 ```
+or just run it like this:
+```
+kddp starte script.ddp <input.txt
+```
 
 Or run it like this:
-`kddp starte script.ddp <input.text`
-
-I chose to read the input from stdin, because the rather small stdlib of Die Deutsche Programmiersprache has more predefined functions for reading from stdin than for reading text files.
+`kddp starte script.ddp <input.txt`
