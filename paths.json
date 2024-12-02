@@ -1,0 +1,84 @@
+[
+  {
+    "lang": {
+      "codemirror": "esolang",
+      "name": "DDP"
+    },
+    "parts": [{
+      "path": "01a.ddp"
+    },
+    {
+      "path": "01b.ddp"
+    }],
+    "completed": true
+  },  {
+    "lang": {
+      "codemirror": "esolang",
+      "name": "DDP"
+    },
+    "parts": [{
+      "path": "02a.ddp"
+    },
+    {
+      "path": "02b.ddp"
+    }],
+    "completed": true
+  },  {
+    "lang": {
+      "codemirror": "esolang",
+      "name": "DDP"
+    },
+    "parts": [{
+      "path": "03a.ddp"
+    },
+    {
+      "path": "03b.ddp"
+    }],
+    "completed": true
+  },  {
+    "lang": {
+      "codemirror": "esolang",
+      "name": "DDP"
+    },
+    "parts": [{
+      "path": "04a.ddp"
+    },
+    {
+      "path": "04b.ddp"
+    }],
+    "completed": true
+  },  {
+    "lang": {
+      "codemirror": "esolang",
+      "name": "DDP"
+    },
+    "parts": [{
+      "path": "05a.ddp"
+    },
+    {
+      "path": "05b.ddp"
+    }],
+    "completed": true
+  },  {
+    "lang": {
+      "codemirror": "esolang",
+      "name": "DDP"
+    },
+    "parts": [{
+      "path": "06a.ddp"
+    },
+    {
+      "path": "06b.ddp"
+    }],
+    "completed": true
+  },  {
+    "lang": {
+      "codemirror": "esolang",
+      "name": "DDP"
+    },
+    "parts": [{
+      "path": "07a.ddp"
+    }],
+    "completed": false
+  }
+]
